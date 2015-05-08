@@ -17,7 +17,7 @@
 		*/
 		
 		/*
-		*	Get Total choice
+		*	Get Total Questions
 		*/
 		$query = "SELECT * FROM `questions`";
 		//Get result
@@ -25,7 +25,7 @@
 		$total = $results->num_rows;
 		
 		/*
-		*	Get the correct choice
+		*	Get The Correct Choice
 		*/
 		//Create and run query, and put result in a variable
 		$query = "SELECT * FROM `choices` 

@@ -3,7 +3,7 @@
 	if(isset($_POST['submit'])){
 		//Get Post Variable
 		$question_number = $_POST['question_number'];
-		$question_number = $_POST['question_text'];
+		$question_text = $_POST['question_text'];
 		$correct_choice = $_POST['correct_choice'];
 		//Choices array 
 		$choices = array();
@@ -30,7 +30,7 @@
 						$is_correct = 0;
 					}
 					//Choice Query
-					$query = "INSERT INTO 'choices' (question_number, is_correct, text)
+					$query = "INSERT INTO `choices` (question_number, is_correct, text)
 							VALUES ('$question_number', '$is_correct', '$value')";
 							
 					//Run query
@@ -44,14 +44,14 @@
 					}
 				}
 			}
-		}
-		$msg = 'Question has been added';
+		}$msg = 'Question has been added';
+
 	}
 	
 	/*
 	*Get The Total Question
 	*/
-	$query = "SELECT * FROM `questions`"
+	$query = "SELECT * FROM `questions`";
 	//Get result
 	$questions = $mysqli->query($query) or die($mysqli->error.__LINE__);
 	$total = $questions->num_rows; //associative array with data requested
@@ -62,7 +62,7 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>PHP Quizzer</title>
-		<link rel="stylesheet" href="css/style.css" type="text"/>
+		<link rel="stylesheet" href="css/style.css" type="text/css"/>
 	</head>
 	<body>
 		<head> 
