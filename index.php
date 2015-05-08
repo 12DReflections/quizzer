@@ -32,7 +32,7 @@ $total = $results->num_rows;
 					<li>
 						<strong> Type</strong> Multiple Choice</li>
 					<li>
-						<strong> Estimate Time: </strong> <?php echo $total * .5 ?> Minutes</li>
+						<strong> Estimate Time: </strong> <?php echo $total * 0.5 ?> Minutes</li>
 				</ul>
 				<a href="question.php?n=1" class="start">Start Quiz</a>
 			</div>
