@@ -87,7 +87,7 @@
 					</p>
 					<p>
 						<label>Question Text:</label>
-						<input type="text" name="text" />
+						<input type="text" name="question_text" />
 						
 					</p>
 					<p>
