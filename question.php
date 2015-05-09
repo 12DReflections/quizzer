@@ -5,7 +5,7 @@
 	$number = (int)$_GET['n'];
 
 	/*
-	*	Get Total choice
+	*	Get Total Question
 	*/
 		$query = "SELECT * FROM `questions`";
 		//Get result
@@ -13,21 +13,19 @@
 		$total = $results->num_rows;
 	
 	/*
-		Get The Total Question
+	*	Get Questions by number
 	*/
 	$query = "SELECT * FROM questions
 			WHERE question_number = $number";
-			
 	//Get result
 	$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
 	$question = $result->fetch_assoc(); //associative array with data requested
-
+	
 	/*
 	*Get choices
 	*/
 	$query = "SELECT * FROM choices
-			WHERE question_number = $number";
-			
+			WHERE question_number = $number";		
 	//Get result
 	$choices = $mysqli->query($query) or die($mysqli->error.__LINE__);
 	?>
