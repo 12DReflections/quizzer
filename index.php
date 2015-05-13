@@ -37,12 +37,10 @@ $total = $results->num_rows;
 				<a href="question.php?n=1" class="start">Start Quiz</a>
 			</div>
 		</main>
-
 		<footer>
 			<div class="container">
 				Copyright &copy; 2014, PHP Quizzer
 			</div>
 		</footer>
 	</body>
-
 </html>

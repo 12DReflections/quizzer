@@ -16,7 +16,6 @@
 		//Question query
 		$query = "INSERT INTO `questions` (question_number, text)
 				VALUES('$question_number','$question_text')";
-				
 		//Run query
 		$insert_row = $mysqli->query($query) or die($mysqli->error.__LINE__);
 		
@@ -31,8 +30,7 @@
 					}
 					//Choice Query
 					$query = "INSERT INTO `choices` (question_number, is_correct, text)
-							VALUES ('$question_number', '$is_correct', '$value')";
-							
+							VALUES ('$question_number', '$is_correct', '$value')";		
 					//Run query
 					$insert_row = $mysqli->query($query) or die($mysqli->error.__LINE__);
 					
@@ -45,9 +43,7 @@
 				}
 			}
 		}$msg = 'Question has been added';
-
 	}
-	
 	/*
 	*Get The Total Question
 	*/
