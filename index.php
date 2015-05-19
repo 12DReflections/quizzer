@@ -21,7 +21,6 @@ $total = $results->num_rows;
 				<h1> PHP QUIZZER</h1>
 			</div>
 		</header>
-
 		<main>
 			<div class="container">
 				<h2>Test Your PHP Knowledge!</h2>
